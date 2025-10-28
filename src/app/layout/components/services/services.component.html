@@ -1,0 +1,42 @@
+<section id="services" class="">
+ <h2 class="text-center text-white font-bold text-2xl sm:text-3xl underline decoration-cyan-500/40 mb-8">Services</h2>
+
+ <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  @for (item of servicesList; track $index) {
+  <article
+   class="group bg-gradient-to-br from-[#0b0f2a] to-[#0f1230] border border-white/5 rounded-xl p-6 shadow-lg hover:shadow-2xl transform transition hover:-translate-y-1">
+   <div class="flex items-center gap-4 pb-3 border-b border-white/5 mb-4">
+    <div class="flex-shrink-0">
+     <div
+      class="w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-400 to-blue-600 flex items-center justify-center text-black text-xl shadow-md">
+      <i class="fa-solid fa-gears"></i>
+     </div>
+    </div>
+    <h3 class="text-white text-lg font-semibold">{{
+     item["title"]
+     }}</h3>
+   </div>
+
+   <div class="flex flex-col gap-2">
+    @for (desc of item['description']; track $index) {
+    <p class="text-cyan-300 text-sm leading-relaxed flex items-start gap-2">
+     <span class="text-cyan-200 font-medium mr-2">{{
+      $index+1+"."
+      }}</span>
+     <span class="text-gray-200">{{
+      desc
+      }}</span>
+    </p>
+    }
+   </div>
+
+   <div class="mt-6">
+    <a href="#contact"
+     class="inline-block text-sm bg-transparent border border-cyan-600 text-cyan-300 hover:bg-cyan-600 hover:text-black px-3 py-1.5 rounded-md transition">
+     Hire Me
+    </a>
+   </div>
+  </article>
+  }
+ </div>
+</section>
