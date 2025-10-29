@@ -1,1 +1,39 @@
-<p>contact works!</p>
+<section id="contact" class="py-12 bg-gradient-to-b from-slate-900 via-slate-900/90 to-slate-950">
+ <div class="max-w-4xl mx-auto px-6">
+  <p class="text-center text-white font-extrabold text-2xl sm:text-3xl underline decoration-cyan-500/40 mb-6">
+   Contact Info </p>
+
+  <div class="bg-slate-800/60 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 shadow-lg">
+   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    @for (item of displayList; track $index) {
+    <div
+     class="flex items-start gap-4 p-4 bg-slate-700/30 rounded-lg border border-slate-700 hover:shadow-xl transform hover:-translate-y-0.5 transition">
+     <div class="flex-shrink-0">
+      <span
+       class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-sky-500 text-slate-900">
+       <!-- generic icon -->
+       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"
+        aria-hidden="true">
+        <path
+         d="M2 5a2 2 0 012-2h1.5a.5.5 0 01.5.5V5H4v10h12V5h-2V3.5a.5.5 0 01.5-.5H16a2 2 0 012 2v11a1 1 0 01-1 1H3a1 1 0 01-1-1V5z" />
+        <path d="M8 9a3 3 0 106 0 3 3 0 00-6 0z" />
+       </svg>
+      </span>
+     </div>
+
+     <div class="flex-1 min-w-0">
+      <p class="text-xs uppercase text-cyan-200 font-semibold mb-1 truncate">{{item["label"]}}</p>
+      <p class="text-sm text-white font-medium break-words">{{contactInfo[item["key"]] || "-"}}</p>
+     </div>
+
+     <div class="flex-shrink-0 ml-2">
+      <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-slate-700 text-slate-300">
+       #{{$index + 1}}
+      </span>
+     </div>
+    </div>
+    }
+   </div>
+  </div>
+ </div>
+</section>

@@ -1,0 +1,164 @@
+{
+ "portfolio_id": 1,
+ "portfolio_name": "balaraju_gandham",
+ "user_info": {
+  "name": "Balaraju Gandham",
+  "role": "Full Stack Web Developer",
+  "about": "I’m Balaraju Gandham, a passionate Full Stack Web Developer with 1 year of experience building responsive and scalable web and mobile applications. I specialize in working with modern technologies including Angular, React, Node.js, Express, MongoDB, MySQL, Bootstrap, Tailwind CSS, and Ionic. I’ve contributed to the development of both enterprise-level projects and personal applications, ranging from internal tools, e-commerce platforms, to hybrid mobile apps. I follow clean code principles, RESTful API design, and agile practices, aiming to build efficient, user-centric solutions. I love exploring new technologies, solving real-world problems through code, and continuously growing as a developer. My portfolio showcases the practical work I've done across both professional and self-initiated projects.",
+  "img": ""
+ },
+ "services": [
+  {
+   "id": 1,
+   "title": "Front-End Development",
+   "description": [
+    "Build responsive and modern user interfaces using Angular, React, and Ionic.",
+    "Ensure cross-browser compatibility and seamless performance across devices.",
+    "Utilize Tailwind CSS and Bootstrap for scalable, clean UI design."
+   ]
+  },
+  {
+   "id": 2,
+   "title": "Back-End Development",
+   "description": [
+    "Develop secure and scalable RESTful APIs using Node.js and Express.js.",
+    "Implement authentication flows with JWT and role-based access.",
+    "Build efficient backend services for both web and mobile applications."
+   ]
+  },
+  {
+   "id": 3,
+   "title": "Database Management",
+   "description": [
+    "Design and manage structured data using MySQL and MongoDB.",
+    "Optimize database performance and implement indexing for fast retrieval.",
+    "Ensure secure and validated data storage with backup strategies."
+   ]
+  },
+  {
+   "id": 4,
+   "title": "Full Stack Application Development",
+   "description": [
+    "Build complete web and hybrid mobile applications from scratch.",
+    "Integrate frontend, backend, and database into a seamless, scalable system.",
+    "Deploy applications with a focus on performance, maintainability, and security."
+   ]
+  }
+ ],
+ "projects": [
+  {
+   "id": 1,
+   "title": "Restaurant Web Application",
+   "description": "This is a restaurant web application",
+   "url": "https://restaurant-ang.vercel.app",
+   "teck_stack": [
+    {
+     "id": 1,
+     "cat_name": "Front End",
+     "skills": [
+      "Angular"
+     ]
+    },
+    {
+     "id": 2,
+     "cat_name": "Backend End",
+     "skills": [
+      "Node.js",
+      "Express"
+     ]
+    },
+    {
+     "id": 3,
+     "cat_name": "Database",
+     "skills": [
+      "MongoDB"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "title": "Restaurant Mobile App",
+   "description": "This is a restaurant mobile application",
+   "url": "https://gbr-food-app.vercel.app",
+   "teck_stack": [
+    {
+     "id": 1,
+     "cat_name": "Front End",
+     "skills": [
+      "Ionic (Angular)"
+     ]
+    },
+    {
+     "id": 2,
+     "cat_name": "Backend End",
+     "skills": [
+      "Node.js",
+      "Express"
+     ]
+    },
+    {
+     "id": 3,
+     "cat_name": "Database",
+     "skills": [
+      "MongoDB"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "title": "Personal Portfolio",
+   "description": "This is a personal portfolio application",
+   "url": "https://balarajugandham.netlify.app/",
+   "teck_stack": [
+    {
+     "id": 1,
+     "cat_name": "Front End",
+     "skills": [
+      "HTML",
+      "CSS",
+      "Java Script"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "title": "Chat Mobile App",
+   "description": "This is a chat mobile application",
+   "url": "https://gbr-chat-app.vercel.app",
+   "teck_stack": [
+    {
+     "id": 1,
+     "cat_name": "Front End",
+     "skills": [
+      "Ionic (Angular)"
+     ]
+    },
+    {
+     "id": 2,
+     "cat_name": "Backend End",
+     "skills": [
+      "Node.js",
+      "Express"
+     ]
+    },
+    {
+     "id": 3,
+     "cat_name": "Database",
+     "skills": [
+      "MongoDB"
+     ]
+    }
+   ]
+  }
+ ],
+ "contact_info": {
+  "mobile_no": "+91 8688399563",
+  "alternative_number": "",
+  "email": "balarajugandham1@gmail.com",
+  "alternative_email": "",
+  "address": "Hyderabad,TS,IND."
+ }
+}

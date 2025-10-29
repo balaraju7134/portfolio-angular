@@ -1,14 +1,17 @@
 <div class="min-h-screen bg-gradient-to-b from-black via-[#05051a] to-[#0b0b14] text-white">
- <app-header></app-header>
+ <app-header [userInfo]="userInfo"></app-header>
 
  <main class="max-w-6xl mx-auto px-4 py-10 flex flex-col gap-10">
   <!-- HERO -->
-  <app-home></app-home>
+  <app-home [userInfo]="userInfo"></app-home>
 
   <!-- SERVICES -->
   <app-services [servicesList]="servicesList"></app-services>
 
   <!-- PROJECTS -->
   <app-projects [projectsList]="projectsList"></app-projects>
+
+  <!-- CONTACT -->
+  <app-contact [contactInfo]="contactInfo"></app-contact>
  </main>
 </div>
