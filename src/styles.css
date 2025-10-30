@@ -15,13 +15,16 @@
     --color-cyan-600: oklch(60.9% 0.126 221.723);
     --color-sky-500: oklch(68.5% 0.169 237.323);
     --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-indigo-600: oklch(51.1% 0.262 276.966);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-700: oklch(37.2% 0.044 257.287);
     --color-slate-800: oklch(27.9% 0.041 260.031);
     --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-slate-950: oklch(12.9% 0.042 264.695);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
@@ -57,6 +60,7 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
+    --animate-spin: spin 1s linear infinite;
     --blur-sm: 8px;
     --blur-md: 12px;
     --default-transition-duration: 150ms;
@@ -260,6 +264,9 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -364,6 +371,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-spin {
+    animation: var(--animate-spin);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -495,6 +505,9 @@
   }
   .bg-cyan-600 {
     background-color: var(--color-cyan-600);
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
   }
   .bg-gray-900\/95 {
     background-color: color-mix(in srgb, oklch(21% 0.034 264.665) 95%, transparent);
@@ -751,6 +764,12 @@
   .text-gray-300 {
     color: var(--color-gray-300);
   }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-indigo-600 {
+    color: var(--color-indigo-600);
+  }
   .text-red-500 {
     color: var(--color-red-500);
   }
@@ -800,6 +819,12 @@
         text-decoration-color: color-mix(in oklab, var(--color-cyan-500) 40%, transparent);
       }
     }
+  }
+  .opacity-25 {
+    opacity: 25%;
+  }
+  .opacity-75 {
+    opacity: 75%;
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -1251,6 +1276,11 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { HeaderComponent } from "./header/header.component";
 import { ServicesComponent } from "./components/services/services.component";
 import { HomeComponent } from "./components/home/home.component";
@@ -13,14 +13,14 @@ import { ContactComponent } from "./components/contact/contact.component";
 })
 export class LayoutComponent {
 
- portfolioData: any = {}
+ @Input() portfolioData: any = {}
  userInfo: any = {}
  servicesList: any = []
  projectsList: any = []
  contactInfo: any = {}
 
  ngOnInit() {
-  this.portfolioData = JSON.parse(JSON.stringify(portfolioJSON))
+  // this.portfolioData = JSON.parse(JSON.stringify(portfolioJSON))
   this.userInfo = this.portfolioData["user_info"] || {}
   this.servicesList = this.portfolioData["services"] || []
   this.projectsList = this.portfolioData["projects"] || []
